@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            background: url('./images/d.jpg');
+            font-family: Arial, sans-serif;
+            
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333; /* Dark gray header background */
+            border-bottom: 5px solid #555; /* Darker gray border */
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: mediumvioletred; 
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: mediumvioletred; /* Dark gray dropdown text */
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: blueviolet; 
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333; /* Dark gray footer background */
+            text-align: center; 
+            width: 100%; 
+            height: 90px; 
+            color: #fff; /* White footer text */
+            font-size: 25px; 
+            margin-top: 20px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="tt.png" alt="Logo">
+    <h3><i>Virtual Therapy Dog Session Platform</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        </li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-contents">
+                <a href="Dog.php">Dog</a>
+                <a href="therapist.php">Therapist</a>
+                <a href="handler.php">Handler</a>
+                <a href="activities.php">Activities</a>
+                <a href="session.php">Session</a>
+                <a href="client.php">Client</a>
+                <a href="therapist_availability.php">Therapist_availability</a>
+                <a href="dog_certification.php">Dog_certification</a>
+                <a href="session_feedback.php">Session_feedback</a>
+                <a href="therapist_ratings.php">Therapist_ratings</a>
+                
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.php">Login</a>
+                <a href="register.php">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+      </div>
+    </li><br><br>
+    
+    
+    
+  </ul>
+
+</header>
+<section>
+	<h2><bold><u>CONTACT US</u></bold></h2>
+<ul></ul>
+  <li>Address: 224 Main Street, Gishushu Town</li>
+  <li>Phone: +250 725635830,+250789831553</li>
+  <li>Email: info@vtherapydog.com</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="text" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media:
+
+  <a href="https://www.twitter.com/vtherapydog">Twitter</a>
+  <a href="https://www.facebook.com/vtherapydog">Facebook</a>
+  <a href="https://www.instagram.com/vtherapydog">Instagram</a>
+  <a href="https://www.linkedin.com/vtherapydog">LinkedIn</a>
+  <a href="https://www.TikTok.com/vtherapydog">TikTok</a>
+</p>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @UWASE Mizero Aimee</h2></b>
+  </center>
+</footer>
+
+</body>
+</html>
+

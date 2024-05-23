@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            background: url('./images/d.jpg'); 
+            font-family: 'Times New Roman', sans-serif; 
+           
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333; /* Dark gray header background */
+            border-bottom: 5px solid #555; /* Darker gray border */
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: mediumvioletred; 
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: mediumvioletred; /* Dark gray dropdown text */
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: blueviolet; 
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333; /* Dark gray footer background */
+            text-align: center; 
+            width: 100%; 
+            height: 90px; 
+            color: #fff; /* White footer text */
+            font-size: 25px; 
+            margin-top: 20px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="lo.jpg" alt="Logo">
+    <h3><i>Virtual Therapy Dog Session Platform</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        </li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-contents">
+                <a href="Dog.php">Dog</a>
+                <a href="therapist.php">Therapist</a>
+                <a href="handler.php">Handler</a>
+                <a href="activities.php">Activities</a>
+                <a href="session.php">Session</a>
+                <a href="client.php">Client</a>
+                <a href="therapist_availability.php">Therapist_availability</a>
+                <a href="dog_certification.php">Dog_certification</a>
+                <a href="session_feedback.php">Session_feedback</a>
+                <a href="therapist_ratings.php">Therapist_ratings</a>
+                
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.php">Login</a>
+                <a href="register.php">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <h1>Virtual Therapy Dog Session Platform</h1>
+    <p>Join us live for a heartwarming and interactive experience with our therapy dogs! Our live sessions bring the joy and comfort of therapy dogs directly to you, wherever you are. Engage in real-time with our furry friends and their certified handlers, and experience the calming and uplifting benefits of these special interactions. Perfect for reducing stress, boosting your mood, or simply enjoying the company of our delightful dogs. Don't miss out on this unique opportunity to connect and unwind. See you in our next live session!".</p>
+</div>
+<marquee> WELCOME ON OUR WEBSITE</marquee>
+
+<footer>
+    <p>Designed by UWASE Mizero Aimee&reg; 2024</p>
+</footer>
+</body>
+</html>

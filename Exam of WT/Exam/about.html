@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            background: url('./images/d.jpg');
+            font-family:  'Times New Roman', Sans-serif;
+          
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333; /* Dark gray header background */
+            border-bottom: 5px solid #555; /* Darker gray border */
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #fff; /* White text */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: mediumvioletred; 
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: mediumvioletred; /* Dark gray dropdown text */
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: blueviolet; 
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333; /* Dark gray footer background */
+            text-align: center; 
+            width: 100%; 
+            height: 90px; 
+            color: #fff; /* White footer text */
+            font-size: 25px; 
+            margin-top: 20px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="lo.jpg" alt="Logo">
+    <h3><i>Virtual Therapy Dog Session Platform</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        </li>
+        <li class="dropdown">
+            <a href="#">MENU</a>
+            <div class="dropdown-contents">
+                <a href="Dog.php">Dog</a>
+                <a href="therapist.php">Therapist</a>
+                <a href="handler.php">Handler</a>
+                <a href="activities.php">Activities</a>
+                <a href="session.php">Session</a>
+                <a href="client.php">Client</a>
+                <a href="therapist_availability.php">Therapist_availability</a>
+                <a href="dog_certification.php">Dog_certification</a>
+                <a href="session_feedback.php">Session_feedback</a>
+                <a href="therapist_ratings.php">Therapist_ratings</a>
+                
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.php">Login</a>
+                <a href="register.php">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+      </div>
+    </li><br><br>
+    
+    
+    
+  </ul>
+
+</header>
+<section>
+
+<h2 style="color: sandybrown;"><bold><u> OUR MISSION </u></bold></h2>
+
+<p><h3 style="color: black;">
+ "Our mission is to bring comfort, joy, and emotional support to individuals through virtual therapy dog sessions. By leveraging technology, we aim to provide accessible and convenient interactions with therapy dogs, fostering mental wellness, reducing stress, and enhancing the overall quality of life for our participants."
+</h3></p><br>
+
+<h2 style="color: sandybrown;"><bold><u> WHAT DO WE DO</u></bold></h2>
+
+<p><h3 style="color: black;">At our company,  we specialize in delivering virtual therapy dog sessions designed to promote emotional well-being and mental health support. Our platform connects individuals with trained therapy dogs and their handlers through interactive, online sessions. Here's how we achieve this:
+
+Interactive Virtual Sessions: We offer live, engaging interactions with therapy dogs, allowing participants to experience the joy and comfort these animals provide from the convenience of their own homes.
+
+Certified Therapy Dogs: Our therapy dogs and their handlers are certified and trained to provide therapeutic support, ensuring a professional and effective experience.
+
+Personalized Experiences: We tailor our sessions to meet the unique needs of each participant, providing personalized activities and interactions to maximize the benefits of the therapy dog sessions.
+
+Mental Health Support: Our sessions are designed to reduce stress, alleviate anxiety, and provide emotional support. We incorporate mindfulness techniques and relaxation exercises guided by the presence of a therapy dog.
+
+Educational Resources: We offer educational content about the benefits of animal-assisted therapy, pet care, and the role of therapy dogs in mental health.
+
+Accessible and Convenient: Our virtual platform makes therapy dog sessions accessible to individuals regardless of location, ensuring that everyone can benefit from the therapeutic effects of interacting with a therapy dog.
+
+Community and Connection: We foster a sense of community by connecting participants with similar interests and experiences, creating a supportive environment where everyone can share and learn together.
+ 
+</h3></p>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg, Designed by: @UWASE Mizero Aimee</h2></b>
+  </center>
+</footer>
+
+
+</body>
+</html>
